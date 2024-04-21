@@ -58,9 +58,9 @@
               <div class="col-11">
                 <p>{{item.email}}</p>
               </div>
-              <div class="col-12 p-8">
-                <button class="btn btn-sm btn-primary" (click)="onEdit(item)">Editar</button>
-                <button class="btn btn-sm btn-danger" (click)="onDelete(item)">Deletar</button>
+              <div class="col-12">
+                <button class="btn btn-primary" (click)="onEdit(item)">Editar</button>
+                <button class="btn btn-danger" (click)="onDelete(item)">Deletar</button>
               </div>
             </div>
           </div>
@@ -134,7 +134,7 @@
         <!-- Modal footer -->
         <div class="modal-footer">
           <button type="button" class="btn btn-danger" (click)="closeModel()">Fechar</button>
-       @if(studentObj.id == 0){
+      @if(studentObj.id == 0){
         <button type="button" class="btn btn-primary" (click)="saveStudent()">Salvar Estudante</button>
        } @else {
         <button type="button" class="btn btn-success" (click)="updateStudent()">Atualizar Estudante</button>
